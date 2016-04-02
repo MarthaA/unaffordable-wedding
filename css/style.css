@@ -262,6 +262,13 @@ img.hamburger {
   #cssmenu ul li a {
     visibility: hidden;
   }
+
+  img.logo{
+    height: 48px;
+    margin-left: 1em;
+    margin-top: .75em;
+    z-index:10;
+  }
 }
 
 
