@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Amiri:400italic);
+
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+
+#axis {
+    position: relative;
+    -webkit-animation: floatBubble 2s normal ease-out;
+    animation: floatBubble 2s normal ease-out;
+}
+@-webkit-keyframes floatBubble {
+    0% {
+        top:500px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top:500px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+
+img{
+  padding-top:200px;
+  margin: 0 auto;
+  height: 150px;
+  overflow:visible;
+	width: 100%;
+
+}
+
+div.imgstacked{
+  display: none;
+	position: absolute;
+	margin: 0 auto;
+	margin-top:-350px;
+  height: 150px;
+  overflow:visible;
+	width: 100%;
+
+}
+body {
+  width: 100%;
+}
+
+
+a.button {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8em;
+  color: #61686e;
+    margin-top: 2em;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  color: #61686e;
+  margin-top: 2em;
+	line-height: 2em;
+	display: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .9em;
+}
+
+.button {
+  display:block;
+  background: #99ceda;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 8em;
+  text-decoration: none;
+  border:none !important;
+  box-shadow:none !important;
+  width: 25%;
+  margin-top: 2em;
+}
+
+
+
+@media (max-width: 1030px) {
+	div.imgstacked{
+	  display: block;
+	}
+	div.img{
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 600px) {
+.button {
+	width: 65%;
+ }
+
+ h1 {
+	 display: none;
+ }
+ h2 {
+	 display:block;
+ }
+
+ img{
+ 	width: 90%;
+}
