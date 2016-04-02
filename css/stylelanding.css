@@ -156,3 +156,20 @@ body {
  img{
  	width: 90%;
 }
+@-webkit-keyframes floatBubble {
+    0% {
+        top:100px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top:100px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+}
