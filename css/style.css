@@ -264,7 +264,7 @@ img.hamburger {
   }
 
   img.logo{
-    height: 48px;
+    height: 60px;
     margin-left: 1em;
     margin-top: .75em;
     z-index:10;
@@ -396,6 +396,7 @@ button {
   border:none !important;
   box-shadow:none !important;
   width: 100%;
+  cursor: pointer;
 }
 
 .fix{
