@@ -102,7 +102,7 @@ img.logo{
 }
 
 #cssmenu ul li.active a {
-  color: #61686e;
+  color: #000;
   font-weight: bold;
 }
 #cssmenu ul li.active a:before {
@@ -240,7 +240,7 @@ img.badge {
 .show {display:block;}
 
 #active-mobile{
-  color:#2BB572!important;
+  color:#000!important;
   text-decoration: underline;
 
 }
